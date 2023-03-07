@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ff6c67ff.js" crossorigin="anonymous"></script>
+    <title>Responvive Navigation</title>
+</head>
+<body>
+    <div class="nav" id="navbar">
+        <a href="#" class="active nav__item">Home.</a>
+        <a href="#" class="nav__item">Gallery.</a>
+        <a href="#" class="nav__item">About us.</a>
+        <a href="#" class="nav__item">Contact us.</a>
+        <a href="#" class="nav__item">Sign up.</a>
+        <a class="nav__icon" onclick="navMenu()">
+            <i class="fa-solid fa-ellipsis"></i>
+        </a>
+    </div>
+    
+    <div class="main">
+        <h1 class="main__title">The struggle is real.</h1>
+        <p class="main__info">Will I ever get this menu to work?
+        </p>
+    </div>
+    
+    <script>
+    function navMenu() {
+        let burger = document.getElementById("navbar");
+        if (burger.className === "nav") {
+        burger.className += " responsive";
+        } else {
+        burger.className = "nav";
+        }
+    }
+    </script>
+    
+</body>
+</html>
