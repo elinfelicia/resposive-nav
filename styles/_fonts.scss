@@ -1,3 +1,23 @@
 $main-text-font: 'Barlow Condensed', sans-serif;
-$main-text-size: 18px;
+$main-text-size: 22px;
 $title-text-size: 40px;
+
+.nav__item, .nav__icon {
+    font-family: $main-text-font;
+    font-size: $main-text-size;
+    text-shadow: 0 0 1px black;
+    color: white;
+}
+.main__title {
+    font-family: $main-text-font;
+    font-size: $title-text-size;
+    text-shadow: 0 0 1px black;
+    color: #4c956c;
+    text-align: center;
+}
+.main__info {
+    font-family: $main-text-font;
+    font-size: $main-text-font;
+    color: #2c6e49;
+    text-align: center;
+}

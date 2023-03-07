@@ -2,46 +2,66 @@
 
 $bg-color: #fefee3;
 body {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: $bg-color;
-}
-    
-  .nav {
+}    
+.nav {
     overflow: hidden;
     background-color: #ffc9b9;
     border-radius: 4px;
-    &__item {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }  
+    margin-bottom: 20px;
+        &__item {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+        }
+        &__item:hover {
+            font-weight: 700;
+            background-color: #d68c45;
+        }
+        &__icon {
+            padding: 10px;
+        }
+        &__icon:hover {
+            scale: 1.2;
+        }
+        &__home {
+            background-color: #d68c45;
+        }   
 }
-
-  
-  
-  
-  .nav a:hover {
-    font-weight: 700;
-  }
-  .nav__icon:hover {
-    scale: 1.2;
-  }
-  
-  .nav a.active {
-    background-color: #52B788;
-    color: white;
-  }
-  
-  .nav .nav__icon {
+.nav .nav__icon {
     display: none;
   }
-  
+.main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    &__info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }    
+    &__gif {
+            max-width: 80%;
+            margin: 10px;
+            border-radius: 4px;
+            opacity: 0;
+        }
+    &__gif:hover {
+        opacity: 100;
+        transition: 3s 0.5s;
+    }
+} 
   @media screen and (max-width: 700px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.nav__icon {
@@ -64,6 +84,3 @@ body {
     }
   }
   
-  .main__info {
-    padding-left: 15px;
-  }  
